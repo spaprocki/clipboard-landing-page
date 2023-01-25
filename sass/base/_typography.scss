@@ -1,0 +1,40 @@
+  body {
+     font-family: $default-font-stack;
+     font-weight: $default-font-weight;
+     font-size: $default-font-size;
+     color: $color-dark-grayish-blue;
+     text-align: center;
+
+  }
+
+  .heading {
+    font-weight: $default-font-weight-heading;
+    line-height: 1.25;
+
+    &--primary {
+      font-size: clamp(2rem, calc(1.31vw + 1.69rem), 2.875rem);
+      letter-spacing: -0.521739px;
+    }
+
+    &--secondary {
+      font-size: clamp(1.75rem, calc(0.75vw + 1.57rem), 2.25rem);
+    }
+
+    &--tertiary {
+      font-size: 1.5rem;
+    }
+}
+
+  .paragraph {
+    color: $color-grayish-blue;
+    line-height: clamp(1.625rem, calc(0.38vw + 1.54rem), 1.875rem);
+
+    &--primary {
+      font-size: clamp(1rem, calc(0.38vw + 0.91rem), 1.25rem);
+      letter-spacing: 0.12px;
+    }
+
+    &--secondary {
+      font-size: clamp(1rem, calc(0.38vw + 0.91rem), 1.25rem);
+    }
+}

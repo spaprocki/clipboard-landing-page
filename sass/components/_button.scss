@@ -1,0 +1,59 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    color: $color-white;
+    border-radius: 1.75rem;
+    padding: 0.8125rem 0;
+    width: 100%;
+    max-width: 19.4375rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &:focus,:focus-visible {
+    outline-width: 3px;
+    outline-style:  dashed;
+    outline-offset: 5px;
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+  
+  
+  &--green {
+    background-color: $color-strong-cyan;
+    box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+    
+    &:hover {
+      background-color: $color-strong-cyan-hover;
+    }
+
+    &:focus,:focus-visible {
+      outline-color: $color-strong-cyan;
+    }
+  }
+
+  &--blue {
+    background-color: $color-light-blue;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+    
+    &:hover {
+      background-color: $color-light-blue-hover;
+    }
+
+    &:focus,:focus-visible {
+      outline-color: $color-light-blue;
+    }
+  }
+}

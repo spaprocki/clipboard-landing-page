@@ -1,0 +1,24 @@
+.textbox {
+    @include flex-column-align-center;
+    max-width: 45.625rem;
+
+    &--primary {
+        gap: 1rem;
+    }
+
+    &--secondary {
+        gap: clamp(1rem, calc(0.28vw + 0.93rem), 1.1875rem);
+    }
+
+    &--tertiary {
+        gap: clamp(0.625rem, calc(-0.19vw + 0.67rem), 0.5rem);
+        max-width: 21.875rem;
+    }
+
+    &--align-left-big-screen {
+        @include respond(medium-screen) {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+}

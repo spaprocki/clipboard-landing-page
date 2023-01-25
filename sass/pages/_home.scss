@@ -1,0 +1,53 @@
+.main {
+    width: 100%;
+    padding: 0 2rem;
+
+    & > * {
+        @include flex-column-align-center;
+    }
+    
+}
+
+.snippets {
+    margin-top: clamp(10rem, calc(-0.94vw + 10.22rem), 9.375rem);
+
+    &__inner {
+        margin-top: clamp(4.0625rem, calc(1.41vw + 3.73rem), 5rem);
+        @include flex-column-align-center;
+        row-gap: 3.5rem;
+
+        @include respond(medium-screen) {
+            flex-direction: row;
+            column-gap: clamp(3.5rem, calc(5.07vw + 2.31rem), 6.875rem);
+            transform: translateX($offset);
+        }
+    }
+}
+
+.access {
+    margin-top: clamp(11.625rem, calc(-3.38vw + 12.42rem), 9.375rem);
+
+    &__image {
+        margin-top: clamp(4rem, calc(4.32vw + 2.99rem), 6.875rem);
+    }
+}
+
+.tools {
+    margin-top: clamp(8.125rem, calc(2.82vw + 7.46rem), 10rem);
+ 
+    &__list {
+        margin-top: clamp(5.625rem, calc(-1.69vw + 6.02rem), 4.5rem);
+    }
+}
+
+.companies {
+    margin-top: clamp(8.25rem, calc(1.69vw + 7.85rem), 9.375rem);  
+}
+
+.download {
+    margin-top: clamp(10.625rem, calc(-1.88vw + 11.07rem), 9.375rem);
+
+    &__buttons-container {
+        margin-top: 3rem;
+    }
+}

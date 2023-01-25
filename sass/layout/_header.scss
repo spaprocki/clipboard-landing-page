@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    background-image: url("/images/bg-header-mobile.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    @include flex-column-align-center;
+    padding: 0 1.875rem;
+
+    @include respond(medium-screen) {
+      background-image: url("/images/bg-header-desktop.png");
+    }
+
+    &__logo {
+      margin-top: 7.8125rem;
+    }
+
+    &__textbox {
+      margin-top: clamp(4rem, calc(-0.75vw + 4.18rem), 3.5rem);
+    }
+
+    &__buttons-container {
+      margin-top: 3rem;
+    }
+  }
